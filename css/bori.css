@@ -37,3 +37,112 @@ background-image: none;
 border: 1px solid transparent;
 border-radius: 4px;
 }
+
+/* rollover */
+
+
+.read-more:after {
+  content: " >>";
+}
+
+.rollover-blocks .grid {
+  position: relative;
+}
+.rollover-blocks .no-roll {
+  color: white;
+  padding: 20px 30px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.rollover-blocks + .rollover-blocks {
+  margin-top: 20px;
+}
+.rollover-blocks .roll-up {
+  position: absolute;
+  bottom: -50%;
+  color: white;
+  padding: 0 10px 0 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.rollover-blocks .roll-up p, .rollover-blocks .roll-up a {
+  display: block;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+.rollover-blocks .roll-up a {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 10px;
+  color: white;
+}
+.rollover-blocks > div {
+  overflow: hidden;
+  position: relative;
+}
+.rollover-blocks > div.highlight:before {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  content: "Catchy Text";
+  width: 100px;
+  height: 70px;
+  text-align: center;
+  padding-top: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 24px;
+  font-size: 2.4rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.rollover-blocks > div:hover > .roll-up, .rollover-blocks > div:focus > .roll-up {
+  bottom: 0;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.rollover-blocks > div:hover:before, .rollover-blocks > div:focus:before {
+  bottom: 150px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/*.row {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.grid {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  min-height: 1px;
+}
+
+.one-third {
+  width: 33.33333%;
+}*/
