@@ -3,6 +3,7 @@ Image Gallery
 -------------------------*/
 
 //click on thumbnail image
+//$(document).ready(function(){
 $('li img').on('click',function(){
     var src = $(this).attr('src');
     var img = '<img src="' + src + '" class="img-responsive"/>';
@@ -17,22 +18,22 @@ $('li img').on('click',function(){
     html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
     html += '</div>';
 
-    $('#myModal').modal();
-    $('#myModal').on('shown.bs.modal', function(){
+    $('#slides').modal();
+    $('#slides').on('shown.bs.modal', function(){
     //hide or show the right links when first or last image is clicked
-      $('#myModal .modal-body').html(html);
+      $('#slides .modal-body').html(html);
       $('a.controls').trigger('click');
     })
-    $('#myModal').on('hidden.bs.modal', function(){
-      $('#myModal .modal-body').html('');
+    $('#slides').on('hidden.bs.modal', function(){
+      $('#slides .modal-body').html('');
     });
   });
-
+//})
 
 //set up click handler for previous and next buttons
 $(document).on('click', 'a.controls', function(){
   var index = $(this).attr('href');
-  var src = $('ul.imageGallery li:nth-child('+ index + ') img').attr('src');
+  var src = $('ul.row li:nth-child('+ index + ') img').attr('src');
   $('.modal-body img').attr('src', src);
 
   var newPrevIndex = parseInt(index) - 1;
@@ -47,7 +48,7 @@ $(document).on('click', 'a.controls', function(){
   }
 
   // hide "next" link on last image and "prev" on first
-  var total = $('ul.imageGallery li').length + 1;
+  var total = $('ul.row li').length + 1;
   // hide next button
   if (total === newNextIndex) {
     $('a.next').hide();
@@ -62,3 +63,6 @@ $(document).on('click', 'a.controls', function(){
   }
     return false;
 });
+
+
+

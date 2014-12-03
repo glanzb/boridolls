@@ -1,5 +1,5 @@
 body {
-  padding-top: 55spx;
+  padding-top: 55px;
   margin-bottom: 60px;
   position: relative;
 }
@@ -37,6 +37,49 @@ background-image: none;
 border: 1px solid transparent;
 border-radius: 4px;
 }
+
+/* image gallery */
+
+
+#art ul li {     
+    list-style:none;
+    margin-bottom:18px;
+}
+
+ul li img {
+    cursor: pointer;
+}
+
+.modal-body {
+  padding: 5px;
+}
+
+.modal-content {
+  border-radius: 2px;
+}
+
+.modal-dialog img {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.controls{          
+    width:50px;
+    display:block;
+    font-size:.8em;
+    padding-top:7px;
+    font-weight:bold;          
+}
+
+.next {
+    float:right;
+    text-align:right;
+}
+
+
+
+
+
 
 /* rollover */
 
@@ -130,19 +173,4 @@ border-radius: 4px;
   transition: all 0.3s ease;
 }
 
-/*.row {
-  width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
-}
 
-.grid {
-  float: left;
-  padding-right: 10px;
-  padding-left: 10px;
-  min-height: 1px;
-}
-
-.one-third {
-  width: 33.33333%;
-}*/
