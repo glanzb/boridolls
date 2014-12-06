@@ -1,5 +1,5 @@
 /* ------------------------
-Image Gallery
+Modal Gallery
 -------------------------*/
 
 //click on thumbnail image
@@ -7,10 +7,11 @@ Image Gallery
 $('li img').on('click',function(){
     var src = $(this).attr('src');
     var img = '<img src="' + src + '" class="img-responsive"/>';
-    // index method traverses from thumbnail to parent li item and stores its index
+    // get the img source from the thumbnail image src
     // first array index is 0
     var index = $(this).parent('li').index();
 
+    //put the html content together: styled img and controls
     var html = '';
     html += img;                
     html += '<div style="height:25px;clear:both;display:block;">';
@@ -47,15 +48,15 @@ $(document).on('click', 'a.controls', function(){
     $('a.previous').attr('href', newPrevIndex);
   }
 
-  // hide "next" link on last image and "prev" on first
+  // hide first and last controls
   var total = $('ul.row li').length + 1;
-  // hide next button
+  // hide next button on last slide
   if (total === newNextIndex) {
     $('a.next').hide();
   } else {
     $('a.next').show()
   }
-  // hide previous button
+  // hide previous button on first slide
   if (newPrevIndex === 0) {
     $('a.previous').hide();
   } else {
@@ -64,5 +65,48 @@ $(document).on('click', 'a.controls', function(){
     return false;
 });
 
+/* ------------------------
+Etsy script on screen size
+-------------------------*/
 
+function showHide(){
+var $w= $(window).width();
+    if( $w > 800 ) {
+        $('#etsySmall').hide();
+        $('#etsyMedium').hide();
+        $('#etsyMedium2').hide();
+        $('#etsyLarge').show();
+    } 
+    else if ( $w < 800 &&  $w >= 581){
+        $('#etsySmall').hide();
+        $('#etsyMedium').show();
+        $('#etsyMedium2').hide();
+        $('#etsyLarge').hide();
+    }
+    else if ( $w <= 580 &&  $w >= 401){
+        $('#etsySmall').hide();
+        $('#etsyMedium2').show();
+        $('#etsyMedium').hide();
+        $('#etsyLarge').hide();
+    }
+    else if ( $w <= 400){
+        $('#etsySmall').show();
+        $('#etsyMedium').hide();
+        $('#etsyMedium2').hide();
+        $('#etsyLarge').hide();
+    }
+    else {
+        $('#etsySmall').show();
+        $('#etsyMedium').hide();
+        $('#etsyMedium2').hide();
+        $('#etsyLarge').hide();
+    } 
+  };
 
+$(document).ready(function() {
+    showHide()
+});
+
+$( window ).resize(function() {
+    showHide()
+  });

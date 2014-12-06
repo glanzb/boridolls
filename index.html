@@ -50,8 +50,8 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#bio">About me</a></li>
           <li><a href="#art">Art</a></li>
-          <li><a href="#shop">Shop and custom orders</a></li>
-          <li><a href="#doit">Do it yourself</a></li>
+          <li><a href="#shop">Shop/custom orders</a></li>
+          <li><a href="#doit">Do-it-yourself</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -111,8 +111,8 @@
     </div><!-- /.carousel -->
   </div>
 
-    <div class="container">
-      <div class="row" id="bio">
+    <div class="container" id="bio">
+      <div class="row">
         <div class="jumbotron">
         <img src="./img/portrait1.jpg" class="img-responsive">
           <h1>About me</h1>
@@ -166,39 +166,23 @@
           <img src="./img/owls.jpg" alt="" class="img-responsive">
           <div class="roll-up">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, neque qui vero ipsam dolor recusandae commodi temporibus deserunt autem necessitatibus?</p>
-            <a href="#" class="read-more">View Other Page</a>
+            <a href="#" class="read-more">Check out my Etsy shop</a>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 highlight">
           <img src="./img/owls.jpg" alt="" class="img-responsive">
           <div class="roll-up">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, neque qui vero ipsam dolor recusandae commodi temporibus deserunt autem necessitatibus?</p>
-            <a href="#" class="read-more">View Other Page</a>
+            <p>Do you have a special request?</p>
+            <a href="#" class="read-more" class data-toggle="modal" data-target="#contact">Tell me what you need</a>
           </div>
         </div>
       </div>
-
-        <!-- <p class="lead">Etsy shop and custom orders</p>
-        <p>
-        <div class="row marketing">
-        <div class="col-sm-6">
-          <h4>artwork to buy</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-          <a href="#">Shop Etsy</a>
-        </div>
-        <div class="col-sm-6">
-          <h4>Custom orders</h4>
-          <p>couldnt find what you are looking for?  <br>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-          <a href="#">Custom orders</a>
-        </div>
-      </div>
-        </p> -->
       </div>
       
     </div>
   </div>
 
-
+  <div class="etsyBox">
     <script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script>
     <div class="container" id="etsyLarge">
     <script type='text/javascript'>new Etsy.Mini(5723525,'gallery',4,3,1,'https://www.etsy.com');</script>
@@ -206,10 +190,13 @@
     <div class="container" id="etsyMedium">
     <script type='text/javascript'>new Etsy.Mini(5723525,'gallery',3,3,1,'https://www.etsy.com');</script>
     </div>
-    <div class="container" id="etsySmall">
-    <script type='text/javascript'>new Etsy.Mini(5723525,'thumbnail',4,5,1,'https://www.etsy.com');</script>
+    <div class="container" id="etsyMedium2">
+    <script type='text/javascript'>new Etsy.Mini(5723525,'gallery',2,3,1,'https://www.etsy.com');</script>
     </div>
-
+    <div class="container" id="etsySmall">
+    <script type='text/javascript'>new Etsy.Mini(5723525,'thumbnail',3,5,1,'https://www.etsy.com');</script>
+    </div>
+  </div>
   <!-- shop end -->
 
   <!-- doit -->
@@ -241,7 +228,7 @@
   <!-- doit end -->
 
   <!-- rollover -->
-    <div class="container">
+   <!--  <div class="container">
       <h1>Rollover</h1>
       <div class="row  rollover-blocks">
         <div class="col-xs-12 col-sm-6 highlight">
@@ -260,7 +247,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   <!-- rollover end -->
 
   <!-- fixed footer -->

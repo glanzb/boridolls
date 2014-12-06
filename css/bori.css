@@ -30,6 +30,17 @@ h1, .jumbotron h1 {
 	margin-left: auto;
 	margin-right: auto;
 }*/
+.jumbotron {
+	background-color: rgba(243, 243, 243, .5);
+}
+
+#bio {
+	background: url('../img/creatures1.jpg') ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position-x: 0; 
+    background-position: center;
+}
 
 .carousel-caption {
 	padding: .5em;
