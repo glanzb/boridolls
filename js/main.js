@@ -77,19 +77,19 @@ var $w= $(window).width();
         $('#etsyMedium2').hide();
         $('#etsyLarge').show();
     } 
-    else if ( $w < 800 &&  $w >= 581){
+    else if ( $w < 800 &&  $w >= 601){
         $('#etsySmall').hide();
         $('#etsyMedium').show();
         $('#etsyMedium2').hide();
         $('#etsyLarge').hide();
     }
-    else if ( $w <= 580 &&  $w >= 401){
+    else if ( $w <= 600 &&  $w >= 421){
         $('#etsySmall').hide();
         $('#etsyMedium2').show();
         $('#etsyMedium').hide();
         $('#etsyLarge').hide();
     }
-    else if ( $w <= 400){
+    else if ( $w <= 420){
         $('#etsySmall').show();
         $('#etsyMedium').hide();
         $('#etsyMedium2').hide();
@@ -110,3 +110,10 @@ $(document).ready(function() {
 $( window ).resize(function() {
     showHide()
   });
+
+
+function myFunction() {
+  $("a[target=_parent]").attr('target','_blank');
+};
+
+// $(this).attr("target", "_blank"); 

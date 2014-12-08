@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <!-- google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <!-- Custom styles for this template -->
     <link href="./css/bori.css" rel="stylesheet">
@@ -40,7 +39,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">BoriDolls <span>Creations</span></a>
+        <a class="navbar-brand" href="#">BoriDolls <span>creations</span></a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -48,16 +47,18 @@
           <li><a href="#"><class data-toggle="modal" data-target="#contact">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#bio">About me</a></li>
+          <li><a href="#bio">Bio</a></li>
           <li><a href="#art">Art</a></li>
-          <li><a href="#shop">Shop/custom orders</a></li>
+          <li><a href="#shop">Etsy shop</a></li>
+          <li><a href="#shop">Custom orders</a></li>
           <li><a href="#doit">Do-it-yourself</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </nav>
 
-  <div class="container">
+
+  <div class="container" id="car">
        <!-- Carousel main-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -68,7 +69,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="./img/gaias-l.jpg" alt="First slide">
+          <img src="./img/art1.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Art/biography</h1>
@@ -78,7 +79,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="./img/gaias-l.jpg" alt="Second slide">
+          <img src="./img/shop1.jpg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Etsy shop and custom orders</h1>
@@ -89,7 +90,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="./img/gaias-l.jpg" alt="Third slide">
+          <img src="./img/doityourself1.jpg" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Do-it-yourself kits</h1>
@@ -111,23 +112,22 @@
     </div><!-- /.carousel -->
   </div>
 
-    <div class="container" id="bio">
-      <div class="row">
-        <div class="jumbotron">
-        <img src="./img/portrait1.jpg" class="img-responsive">
+  <div class="container" id="bio">
+    <div class="row">
+      <div class="jumbotron">
+        
           <h1>About me</h1>
-          <p class="lead"></p>
-
-          <p>I am a graphic designer form Hungary, living mostly in California. I have tried different crafts, but I was never so much in love with any art form as I am with felting now. I enjoy working with wool very much and I create each of my items with lots of love and care. </p>
+          <!-- <p class="lead"></p> -->
+          <p><img src="./img/portrait5.jpg" class="img-responsive">I am a graphic designer form Hungary, living mostly in California. I have tried different crafts, but I was never so much in love with any art form as I am with felting now. I enjoy working with wool very much and I create each of my items with lots of love and care. </p>
           <p>My creations are Waldorf inspired, but I am self taught and use wool and other inlayed materials in a unique way. I use colorful wool and mix them with natural found objects or recycled and vintage material.</p>
-        </div>
       </div>
-    </div><!-- bio end -->
+    </div>
+  </div><!-- bio end -->
 
 
     <!-- art gallery modal -->
   <div class="container" id="art">
-      <ul class="row jumbotron">
+    <ul class="row jumbotron">
       <h1>Welcome to my gallery!</h1>
         <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/bori1.jpg"></li>
         <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/bori2.jpg"></li>
@@ -141,16 +141,16 @@
         <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/bori1.jpg"></li>
         <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/bori2.jpg"></li>
         <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/bori3.jpg"></li>
-      </ul>
-    </div>
-    <div class="modal fade" id="slides" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">         
-          <div class="modal-body">                
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+    </ul>
+  </div>
+  <div class="modal fade" id="slides" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">         
+        <div class="modal-body">                
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
   
 
@@ -159,42 +159,46 @@
     <div class="row" id="shop">
       <div class="jumbotron">
         <h1>You name it, I felt it</h1>
-
-      <div class="row  rollover-blocks">
-        <div class="col-xs-12 col-sm-6 highlight">
-
-          <img src="./img/owls.jpg" alt="" class="img-responsive">
-          <div class="roll-up">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, neque qui vero ipsam dolor recusandae commodi temporibus deserunt autem necessitatibus?</p>
-            <a href="#" class="read-more">Check out my Etsy shop</a>
+          <div class="row rollover-blocks">
+            <div class="col-xs-12 col-sm-6 highlight">
+              <img src="./img/owls.jpg" alt="" class="img-responsive">
+              <div class="roll-up">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, neque qui vero ipsam dolor recusandae commodi temporibus deserunt autem necessitatibus?</p>
+                <a href="#" class="read-more">Check out my Etsy shop</a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 highlight">
+              <img src="./img/owls.jpg" alt="" class="img-responsive">
+              <div class="roll-up">
+                <p>Do you have a special request?</p>
+                <a href="#" class="read-more" class data-toggle="modal" data-target="#contact">Tell me what you need</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 highlight">
-          <img src="./img/owls.jpg" alt="" class="img-responsive">
-          <div class="roll-up">
-            <p>Do you have a special request?</p>
-            <a href="#" class="read-more" class data-toggle="modal" data-target="#contact">Tell me what you need</a>
-          </div>
-        </div>
       </div>
-      </div>
-      
     </div>
   </div>
-
-  <div class="etsyBox">
-    <script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script>
-    <div class="container" id="etsyLarge">
-    <script type='text/javascript'>new Etsy.Mini(5723525,'gallery',4,3,1,'https://www.etsy.com');</script>
+<!-- etsy -->
+  <div class="row etsy">
+    <div class="container jumbotron">
+    <div class="col-xs-12">
+      <h1>BoriDolls shop</h1>
+      <div id="etsyBox">
+        <script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script>
+        <div class="container" id="etsyLarge">
+          <script type='text/javascript'>new Etsy.Mini(5723525,'gallery',4,3,1,'https://www.etsy.com');</script>
+        </div>
+        <div class="container" id="etsyMedium">
+          <script type='text/javascript'>new Etsy.Mini(5723525,'gallery',3,3,1,'https://www.etsy.com');</script>
+        </div>
+        <div class="container" id="etsyMedium2">
+          <script type='text/javascript'>new Etsy.Mini(5723525,'gallery',2,3,1,'https://www.etsy.com');</script>
+        </div>
+        <div class="container" id="etsySmall">
+          <script type='text/javascript'>new Etsy.Mini(5723525,'thumbnail',3,5,1,'https://www.etsy.com');</script>
+        </div>
+      </div>
     </div>
-    <div class="container" id="etsyMedium">
-    <script type='text/javascript'>new Etsy.Mini(5723525,'gallery',3,3,1,'https://www.etsy.com');</script>
-    </div>
-    <div class="container" id="etsyMedium2">
-    <script type='text/javascript'>new Etsy.Mini(5723525,'gallery',2,3,1,'https://www.etsy.com');</script>
-    </div>
-    <div class="container" id="etsySmall">
-    <script type='text/javascript'>new Etsy.Mini(5723525,'thumbnail',3,5,1,'https://www.etsy.com');</script>
     </div>
   </div>
   <!-- shop end -->
@@ -205,7 +209,7 @@
         <div class="jumbotron">
             <h1>Do it yourself</h1>
             <p class="lead">Kits, tutorials, buy wool</p>
-        </div>
+        
         <div class="row marketing">
           <div class="col-sm-4">
             <h4>kits</h4>
@@ -222,49 +226,28 @@
             <p>couldnt find what you are looking for?  <br>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
             <a href="#">place order</a>
           </div>
+          </div>
         </div>
     </div>
   </div>
   <!-- doit end -->
 
-  <!-- rollover -->
-   <!--  <div class="container">
-      <h1>Rollover</h1>
-      <div class="row  rollover-blocks">
-        <div class="col-xs-12 col-sm-6 highlight">
-
-          <img src="./img/owls.jpg" alt="" class="img-responsive">
-          <div class="roll-up">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, neque qui vero ipsam dolor recusandae commodi temporibus deserunt autem necessitatibus?</p>
-            <a href="#" class="read-more">View Other Page</a>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 highlight">
-          <img src="./img/owls.jpg" alt="" class="img-responsive">
-          <div class="roll-up">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, neque qui vero ipsam dolor recusandae commodi temporibus deserunt autem necessitatibus?</p>
-            <a href="#" class="read-more">View Other Page</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  <!-- rollover end -->
-
+  
   <!-- fixed footer -->
 
   <footer class="footer" id="foot-nav">
     <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
       <div class="btn-group btn-group-justified" role="group" aria-label="...">
-          <div class="btn-group" role="group">
-            <button type="button"class="btn btn-default"><a href="mailto:boridolls@gmail.com?subject=BoriDolls">Send email</a></button>
-          </div>
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default"><a href="https://www.facebook.com/boridolls" target="_blank">Facebook page</a></button>
-          </div>
-          <div class="btn-group" role="group">
-           <button type="button"class="btn btn-default"><a href="https://www.etsy.com/shop/boridolls" target="_blank">BoriDolls on Etsy</a></button>
-          </div>
+        <div class="btn-group" role="group">
+          <button type="button"class="btn btn-default"><a href="mailto:boridolls@gmail.com?subject=BoriDolls">Send email</a></button>
         </div>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-default"><a href="https://www.facebook.com/boridolls" target="_blank">Facebook page</a></button>
+        </div>
+        <div class="btn-group" role="group">
+         <button type="button"class="btn btn-default"><a href="https://www.etsy.com/shop/boridolls" target="_blank">BoriDolls on Etsy</a></button>
+        </div>
+      </div> 
     </nav>
   </footer>
 
@@ -286,7 +269,6 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 <!-- end form modal -->
-
 
 
 
