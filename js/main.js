@@ -112,8 +112,8 @@ $( window ).resize(function() {
   });
 
 
-function myFunction() {
-  $("a[target=_parent]").attr('target','_blank');
-};
+$(document).ready(function() {
+  $("a[target=_parent]").attr('target','_blank')
+});
 
 // $(this).attr("target", "_blank"); 

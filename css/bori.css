@@ -25,9 +25,9 @@ h1, .jumbotron h1 {
   margin-bottom: -40px;
 }*/
 
-.row.etsy {
+/*.row.etsy {
   margin-top: 20px;
-}
+}*/
 
 
 
@@ -37,11 +37,11 @@ h1, .jumbotron h1 {
 	background-color: rgba(0, 0, 0, 0.1);
 	}
 
-.jumbotron h1, p {
+.jumbotron h1, h4, p {
 	background-color: rgba(243, 243, 243, .5);
 	padding: 10px;
 	margin-top: 0px;
-	margin-bottom: 0px;
+	/*margin-bottom: 0px;*/
 	/*padding-bottom: 200px;*/
 }
 
@@ -54,9 +54,10 @@ h1, .jumbotron h1 {
 }
 
 #art {
-	background: url('../img/motherearth.jpg') ;
+	/*background: url('../img/motherearth.jpg') ;*/
 	/*background-repeat: no-repeat;*/
 	background-size: contain;
+	background-color: #fff;
 }
 
 #shop {
@@ -312,13 +313,11 @@ ul li img:hover {
 
 
 
-/*@media screen and (max-width: 375px) {
-	#foot-text {
-		display: none;
+@media screen and (max-width: 768px) {
+	.rollover-blocks > div {
+  		max-width: 30em;
+  		margin: 0 auto;
 	}
 }
-@media screen and (min-width: 375px) {
-	#foot-icon {
-		display: none;
-	}
+
 }*/
