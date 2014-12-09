@@ -27,7 +27,7 @@
 
  </head>
 
-  <body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target=".navbar">
 
 <!-- Fixed navbar -->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -115,7 +115,6 @@
   <div class="container" id="bio">
     <div class="row">
       <div class="jumbotron">
-        
           <h1>About me</h1>
           <!-- <p class="lead"></p> -->
           <p><img src="./img/portrait5.jpg" class="img-responsive">I am a graphic designer form Hungary, living mostly in California. I have tried different crafts, but I was never so much in love with any art form as I am with felting now. I enjoy working with wool very much and I create each of my items with lots of love and care. </p>
@@ -155,28 +154,27 @@
   
 
   <!-- shop -->
-  <div class="container">
-    <div class="row" id="custom">
+  <div class="container" id="custom">
+    <div class="row">
       <div class="jumbotron">
         <h1>You name it, I felt it</h1>
           <p class="lead">You can have your own BoriDoll</p>
           <p>Some of my work can be ordered on Etsy.com, but if you have something special or different in mind, don't worry,   </p> 
-          <div class="col-xs-6">
-          <img src="./img/portrait4.jpg" class="img-responsive">
-            <a href="">Buy dolls on Etsy </a>
-            
-          </div>
-          <div class="col-xs-6">
-          <img src="./img/portrait4.jpg" class="img-responsive">
-            <p>Custom orders</p>
-           
-          </div>
+            <div class="row" id="custom">
+              <div class="col-xs-6">
+              <img src="./img/portrait4.jpg" class="img-responsive">
+              <a href="">Buy dolls on Etsy </a>
+              </div>
+              <div class="col-xs-6">
+              <img src="./img/portrait4.jpg" class="img-responsive">
+              <a href="">Custom orders</a>
+            </div>
       </div>
     </div>
   </div>
-
+</div>
 <!-- etsy -->
-  <div class="row etsy" id="shop">
+<!--   <div class="row etsy" id="shop">
     <div class="container jumbotron">
     <div class="col-xs-12">
       <h1>BoriDolls shop</h1>
@@ -197,25 +195,25 @@
       </div>
     </div>
     </div>
-  </div>
+  </div> -->
 <!-- shop end -->
 
 <!-- doit -->
-  <div class="container">
-    <div class="row" id="doit">
+  <div class="container" id="doit">
+    <div class="row">
       <div class="jumbotron">
         <h1>Do it yourself - available classes</h1>
           <div class="row rollover-blocks">
-            <div class="col-sm-6 highlight">
-            <h4>Felting classes</h4>
+            <div class="col-xs-6 highlight">
+              <h4>Felting classes</h4>
               <img src="./img/class2.jpg" alt="" class="img-responsive">
               <div class="roll-up">
                 <p>Join us for some felting fun! Subscribe to my mailing list or follow BoriDolls on facebook for dates.</p>
-            <a href="#" class="read-more">Facebook</a></p>
-               
+                <a href="#" class="read-more">Facebook</a> 
               </div>
             </div>
-            <div class="col-sm-6 highlight">
+            <div class="col-xs-6 highlight">
+              <h4>Buy wool</h4>
               <img src="./img/wool-flickr.jpg" alt="" class="img-responsive">
               <div class="roll-up">
                 <p>Buy wool, do-it-yourself kits coming soon</p>
@@ -224,11 +222,21 @@
             </div>
           </div>
       </div>
-
     </div>
   </div>
   <!-- doit end -->
 
+  <div class="container">
+    <div class="row jumbotron" id="elist">
+      
+    </div>
+  </div>
+
+
+
+<!-- <p>If you click on the "Hide" button, I will disappear.</p>
+<button id="hide">Hide</button>
+<button id="show">Show</button> -->
   
   <!-- fixed footer -->
 
@@ -277,6 +285,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
+     <script src="./js/etsy.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>

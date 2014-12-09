@@ -116,4 +116,12 @@ $(document).ready(function() {
   $("a[target=_parent]").attr('target','_blank')
 });
 
-// $(this).attr("target", "_blank"); 
+// show-hide button 
+
+$("#hide").click(function(){
+  $("p").hide();
+});
+
+$("#show").click(function(){
+  $("p").show();
+});
