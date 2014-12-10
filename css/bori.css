@@ -5,14 +5,14 @@ body {
  }
 
 .container {
-	 max-width: 800px;
+	 max-width: 1024px;
 }
 .jumbotron p {
 	font-size: 1.1em;
 	text-align: justify;
 }
 
-h1, .jumbotron h1 {
+h1, .jumbotron h1, h2 {
 	font-family: 'Lovers Quarrel', cursive;
 	font-size: 4em;
 	text-shadow: 1px 2px 1px rgba(0,0,0,.3);
@@ -22,14 +22,6 @@ h1, .jumbotron h1 {
 li {
 	list-style:none;
 }
-/*.row {
-  margin-bottom: -40px;
-}*/
-
-/*.row.etsy {
-  margin-top: 20px;
-}*/
-
 
 
 /* backgrounds */
@@ -42,8 +34,6 @@ li {
 	background-color: rgba(243, 243, 243, .5);
 	padding: 10px;
 	margin-top: 0px;
-	/*margin-bottom: 0px;*/
-	/*padding-bottom: 200px;*/
 }
 
 #bio {
@@ -68,6 +58,7 @@ li {
     background-position: center center;
     background-size: contain;
 }*/
+
 #doit {
 	background: url('../img/owls.jpg') ;
 	background-repeat: no-repeat;
@@ -104,7 +95,7 @@ li {
 }
 
 
-.glyphicon-chevron-right {
+/*.glyphicon-chevron-right {
 	right: 10%;
 	top: 70%;
 }
@@ -115,18 +106,13 @@ li {
 
 .carousel-indicators {
 	bottom: 1px;
+}*/
+
+.glyphicon-chevron-right:before, .glyphicon-chevron-left:before  {
+	text-shadow: 1px 2px 1px rgba(0,0,0,1);
+	color: #fff;
 }
 
-/*.glyphicon-chevron-right:before {
-	font-family: 'Lovers Quarrel', cursive;
-	content: ">";
-	font-size: 6em;
-}
-.glyphicon-chevron-left:before {
-	font-family: 'Lovers Quarrel', cursive;
-	content: "<";
-	font-size: 6em;
-}*/
 
 /* bio block */
 #bio img {
