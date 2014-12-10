@@ -319,6 +319,9 @@ ul li img:hover {
 /* etsy impoer block*/
 #elist a {
 	display: block;
+	text-overflow: ellipsis;
+  	white-space: nowrap;
+  	overflow: hidden;
 }
 
 
