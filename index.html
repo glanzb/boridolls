@@ -62,12 +62,12 @@
        <!-- Carousel main-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
-      <ol class="carousel-indicators">
+      <!-- <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
+      </ol> -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img src="./img/car/art2.jpg" alt="Artwork and biography">
@@ -82,7 +82,7 @@
           <img src="./img/car/custom1.jpg" alt="Custom orders">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Custom orders</h1>
+              <h1><a href="#custom">Custom orders</a></h1>
               <p>You nameit, I felt it! <a href="#custom">...need some inspiration?</a></p>
             </div>
           </div>
@@ -90,10 +90,10 @@
         <div class="item">
           <img src="./img/car/snowdogs.jpg" alt="Etsy shop">
           <div class="container">
-            <div class="carousel-caption">
+            <a href="#elist"><div class="carousel-caption">
               <h1>Etsy shop</h1>
-              <p><a href="#elist"> Visit my Etsy shop</a> and order your very own BoriDoll</p>
-            </div>
+              <p> <a href="#elist">Visit my Etsy shop</a> and order your very own BoriDoll</p>
+            </div></a>
           </div>
         </div>
         <div class="item">
@@ -120,8 +120,7 @@
   <div class="container" id="quote1">
     <div class="row">
       <div class="jumbotron">
-        
-          <h2>"It seems the more we learn, the more we want to continue learning and experimenting with other ways to create"</h2>
+        <blockquote>It seems the more we learn, the more we want to continue learning and experimenting with other ways to create"</blockquote>
       </div>
     </div>
   </div>
@@ -130,9 +129,10 @@
   <div class="container" id="bio">
     <div class="row">
       <div class="jumbotron">
+          <img src="./img/portrait5.jpg" class="img-responsive">
           <h1>About me</h1>
-          <!-- <p class="lead"></p> -->
-          <p><img src="./img/portrait5.jpg" class="img-responsive">I am a graphic designer form Hungary, living mostly in California. I have tried different crafts, but I was never so much in love with any art form as I am with felting now. I enjoy working with wool very much and I create each of my items with lots of love and care. </p>
+          
+          <p>I am a graphic designer form Hungary, living mostly in California. I have tried different crafts, but I was never so much in love with any art form as I am with felting now. I enjoy working with wool and I create each of my items with lots of love and care. </p>
           <p>My creations are Waldorf inspired, but I am self taught and use wool and other inlayed materials in a unique way. I use colorful wool and mix them with natural found objects or recycled and vintage material.</p>
       </div>
     </div>
@@ -169,8 +169,7 @@
   <div class="container" id="quote2">
     <div class="row">
       <div class="jumbotron">
-        
-          <h2>My son loves his robot, he was playing with it and said 'Oh he loves us.. cause see he has a heart'</h2>
+        <blockquote>My son loves his robot, he was playing with it and said: ‘Oh he loves us... ‘cause see, he has a heart.’</blockquote>
       </div>
     </div>
   </div>
@@ -202,8 +201,10 @@
 <!-- etsy -->
 
 <div class="container">
-    <div class="row jumbotron" id="elist">
-      
+    <div class="row jumbotron">
+    <h1>Etsy shop</h1>
+    <div id="elist">
+    </div> 
     </div>
 </div>
 
@@ -233,8 +234,8 @@
   <div class="container" id="quote3">
     <div class="row">
       <div class="jumbotron">
-        <h2>"Thank you, Borbala, it was lovely to learn from you and to create these darling owls amongst such a nice group of people. i hope you will have many, many more classes! i want to create more felt creatures!" </h2>
-          <p class="pull-right"><i>Nitaña</i></p>
+        <blockquote>Thank you, Borbala, it was lovely to learn from you and to create these darling owls amongst such a nice group of people. I hope you will have many, many more classes! I want to create more felt creatures!</blockquote> 
+          
       </div>
     </div>
   </div>
@@ -245,7 +246,7 @@
         <h1>Do it yourself - available classes</h1>
           <div class="row rollover-blocks">
             <div class="col-xs-6 highlight">
-              <h4>Felting classes</h4>
+              <h4>Workshops</h4>
               <img src="./img/class2.jpg" alt="" class="img-responsive">
               <div class="roll-up">
                 <p>Join us for some felting fun! Subscribe to my mailing list or follow BoriDolls on facebook for dates.</p>

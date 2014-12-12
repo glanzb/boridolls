@@ -1,0 +1,18 @@
+colors
+
+img shadow, bg
+
+rgba(211, 195, 160, 0.3)
+
+background-color: rgba(211, 195, 160, 0.3);
+
+body fonts
+color: #382F29;
+
+bg?
+beige: FFD7C9
+
+a, quote orange:
+c76c0c
+
+a hover, darker orange: #AE5E0A

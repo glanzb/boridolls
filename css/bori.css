@@ -1,22 +1,44 @@
 body {
-  padding-top: 55px;
+  padding-top: 50px;
   margin-bottom: 60px;
   font-family:'Oxygen', sans-serif;
+  font-size: 1.25em;
+  color: #382F29;
+ }
+
+ a {
+ 	color: #c76c0c
+ }
+
+ a:hover {
+ 	color: #AE5E0A;
+ 	text-decoration: none;
  }
 
 .container {
 	 max-width: 1024px;
 }
+
+.container .jumbotron, .container-fluid .jumbotron {
+border-radius: 0;
+}
+
 .jumbotron p {
 	font-size: 1.1em;
 	text-align: justify;
 }
 
-h1, .jumbotron h1, h2 {
+h1, .jumbotron h1 {
 	font-family: 'Lovers Quarrel', cursive;
-	font-size: 4em;
+	font-size: 4rem;
 	text-shadow: 1px 2px 1px rgba(0,0,0,.3);
 	margin-top: 0;
+}
+
+
+h2 {
+	font-size: 2.5em;
+	font-family: 'Lovers Quarrel', cursive;
 }
 
 li {
@@ -27,7 +49,8 @@ li {
 /* backgrounds */
 
 .jumbotron {
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(211, 195, 160, 0.3);
+	margin-bottom: 0;
 	}
 
 .jumbotron h1, h4, p {
@@ -37,7 +60,7 @@ li {
 }
 
 #bio {
-	background: url('../img/creatures1.jpg') ;
+	background: url('../img/bg1-s.jpg') ;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center center;
@@ -59,8 +82,8 @@ li {
     background-size: contain;
 }*/
 
-#doit {
-	background: url('../img/owls.jpg') ;
+#doit, #custom {
+	background: url('../img/bg1-s.jpg') ;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center center;
@@ -95,24 +118,18 @@ li {
 }
 
 
-/*.glyphicon-chevron-right {
-	right: 10%;
-	top: 70%;
-}
-
-.carousel-control {
-	top: 7em;
-}
-
-.carousel-indicators {
-	bottom: 1px;
-}*/
 
 .glyphicon-chevron-right:before, .glyphicon-chevron-left:before  {
 	text-shadow: 1px 2px 1px rgba(0,0,0,1);
 	color: #fff;
+	font-family: 'Lovers Quarrel', cursive;
+	font-size: 4em;
+	content: "›"
 }
 
+.glyphicon-chevron-left:before{
+	content: "‹"
+}
 
 /* bio block */
 #bio img {
@@ -121,11 +138,7 @@ li {
 	shape-outside: circle();
 	margin: 5px;
 	float: right;
-	vertical-align: top;
-	/*-webkit-filter: blur(5px); 
-    -moz-filter: blur(5px); 
-    filter: blur(5px);
-    margin: 5px;*/
+	vertical-align: middle;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgba(255,228,181,0.1)), color-stop(0.67, rgba(205,133,63,0.3)));
 	background-image: -moz-linear-gradient(center bottom, rgba(255,228,181,0.1) 33%, rgba(205,133,63,0.3) 67% ); 
 	padding: 20px;
@@ -163,7 +176,7 @@ outline: 0;
 .navbar-brand span {
 	font-family: 'Lovers Quarrel', cursive;
 	font-size: 1.5em;
-	color: #000;
+	/*color: #000;*/
 }
 
 .navbar {
@@ -192,18 +205,10 @@ outline: 0;
 
 ul li img {
     cursor: pointer;
-    /*background: #fff;*/
-  /*  -moz-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
-    -webkit-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
-    box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );*/
     padding: .975em; /* 3/4 of 1.3 */
-
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgba(255,228,181,0.1)), color-stop(0.67, rgba(205,133,63,0.3)));
-	background-image: -moz-linear-gradient(center bottom, rgba(255,228,181,0.1) 33%, rgba(205,133,63,0.3) 67% ); 
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgba(255,228,181,0.1)), color-stop(0.67, rgba(211, 195, 160, 0.3)));
+	background-image: -moz-linear-gradient(center bottom, rgba(255,228,181,0.1) 33%, rgba(211, 195, 160, 0.3) 67% ); 
 	padding: 20px;
-
-/*	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);*/
-/*border-radius: 5%;*/
 }
 
 ul li img:hover {
@@ -278,8 +283,6 @@ ul li img:hover {
 }
 
 .highlight {
-	/*padding-right: 0;
-	max-width: 30em;*/
 	margin: 0 auto;
 }
 .rollover-blocks > div.highlight:before {
@@ -325,7 +328,7 @@ ul li img:hover {
 }
 
 
-/* etsy impoer block*/
+/* etsy import block*/
 #elist a {
 	display: block;
 	text-overflow: ellipsis;
@@ -333,9 +336,66 @@ ul li img:hover {
   	overflow: hidden;
 }
 
+blockquote{
+  display:block;
+  
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  
+  /*Font*/
+  font-family: 'Lovers Quarrel', cursive;
+  font-size: 2.25em;
+  line-height: 1.2;
+  text-align: justify;
+  
+  /*Borders */
+  border-left: 15px solid #c76c0c;
+  border-right: 2px solid #c76c0c;
+  
+  /*Box Shadow*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+/* quotes */
+
+blockquote::before{
+  content: "“";
+  font-size: 4em;
+  color: #c76c0c;
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
 
 
+@media screen and (min-width: 768px){
+/*.jumbotron {
+	padding: 0;
+}*/
+#bio img {
+	max-width: 25%;
+	}
+}
 
+@media screen and (min-width: 1200px){
+#bio img {
+	max-width: 24%;
+	}
+}
+@media screen and (max-width: 991px){
+#bio img {
+	max-width: 47%;
+	}
+}
+@media screen and (max-width: 768px){
+#bio img {
+	max-width: 35%;
+	}
+}
 /*
 @media screen and (max-width: 768px) {
 	.rollover-blocks > div {
