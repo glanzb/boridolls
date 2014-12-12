@@ -169,7 +169,6 @@ outline: 0;
 .navbar-brand span {
 	font-family: 'Lovers Quarrel', cursive;
 	font-size: 1.5em;
-	/*color: #000;*/
 }
 
 .navbar {
@@ -334,7 +333,6 @@ ul li img:hover {
 
 blockquote{
   display:block;
-  
   padding: 15px 20px 15px 45px;
   margin: 0 0 20px;
   position: relative;
@@ -366,35 +364,4 @@ blockquote::before{
   left: 10px;
   top: -10px;
 }
-
-/*
-@media screen and (min-width: 768px){
-#bio img {
-	max-width: 25%;
-	}
-}
-
-@media screen and (min-width: 1200px){
-#bio img {
-	max-width: 24%;
-	}
-}
-@media screen and (max-width: 991px){
-#bio img {
-	max-width: 47%;
-	}
-}
-@media screen and (max-width: 768px){
-#bio img {
-	max-width: 35%;
-	}
-}*/
-/*
-@media screen and (max-width: 768px) {
-	.rollover-blocks > div {
-  		max-width: 30em;
-  		margin: 0 auto;
-	}
-}*/
-
 
