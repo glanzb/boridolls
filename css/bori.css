@@ -20,7 +20,7 @@ body {
 }
 
 .container .jumbotron, .container-fluid .jumbotron {
-border-radius: 0;
+	border-radius: 0;
 }
 
 .jumbotron p {
@@ -60,7 +60,7 @@ li {
 	margin-top: 0px;
 }
 
-#bio {
+#bio, #doit, #custom {
 	background: url('../img/bg1-s.jpg') ;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -75,13 +75,6 @@ li {
 	background-color: #fff;
 }
 
-#doit, #custom {
-	background: url('../img/bg1-s.jpg') ;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-}
 
 /* carousel */
 
@@ -110,7 +103,9 @@ li {
 	font-size: 1.25em;
 }
 
-
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+	top: 40%;
+}
 
 .glyphicon-chevron-right:before, .glyphicon-chevron-left:before  {
 	text-shadow: 1px 2px 1px rgba(0,0,0,1);
@@ -139,32 +134,7 @@ li {
 	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
 
-
-/* navbar toggle menu original bootsrap */
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-background-color: #ddd;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-/* background-color: #ddd; */
-}
-.navbar-default .navbar-toggle {
-border-color: #ddd;
-}
-.navbar-toggle:focus {
-outline: 0;
-}
-.navbar-toggle {
-	position: relative;
-	float: right;
-	padding: 9px 10px;
-	margin-top: 8px;
-	margin-right: 15px;
-	margin-bottom: 8px;
-	background-color: transparent;
-	background-image: none;
-	border: 1px solid transparent;
-	border-radius: 4px;
-}
+/* navbar */
 
 .navbar-brand span {
 	font-family: 'Lovers Quarrel', cursive;
@@ -192,12 +162,21 @@ outline: 0;
 
 #art ul li {     
     list-style:none;
-    margin-bottom:18px;
+    margin-bottom:10px;
+}
+#art ul li p {     
+    padding-top: 3px;
+    text-align: center;
+    background: transparent;
 }
 
-#elist img, ul li img {
+#art p {
+	text-align: center;
+	font-size: .9em;
+}
+
+#elist a img, ul li img {
     cursor: pointer;
-    padding: .975em; /* 3/4 of 1.3 */
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgba(255,228,181,0.1)), color-stop(0.67, rgba(211, 195, 160, 0.3)));
 	background-image: -moz-linear-gradient(center bottom, rgba(255,228,181,0.1) 33%, rgba(211, 195, 160, 0.3) 67% ); 
 	padding: 20px;
@@ -282,7 +261,7 @@ ul li img:hover {
   position: absolute;
   left: 20px;
   bottom: 20px;
-  content: "Read on!";
+  content: "Join us!";
   width: 100px;
   height: 100px;
   text-align: center;
@@ -322,14 +301,23 @@ ul li img:hover {
 }
 
 
-/* etsy import block*/
 #elist a {
 	display: block;
 	text-overflow: ellipsis;
   	white-space: nowrap;
-  	overflow: hidden;
-  	max-width: 200px;
+   	overflow: hidden;
+  	max-width: 180px;
+  	padding: 3px;
 }
+
+#elist img:hover{
+	    -moz-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+	    -webkit-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+	    box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+	    border: transparent;
+}
+
+/* quotes */
 
 blockquote{
   display:block;
@@ -353,7 +341,7 @@ blockquote{
   box-shadow: 2px 2px 15px #ccc;
 }
 
-/* quotes */
+
 
 blockquote::before{
   content: "“";
