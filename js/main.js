@@ -1,4 +1,14 @@
 /* ------------------------
+Nav collapse on click
+-------------------------*/
+
+$(document).ready(function () {
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+});
+
+/* ------------------------
 Modal Gallery
 -------------------------*/
 
@@ -112,16 +122,12 @@ $( window ).resize(function() {
   });
 
 
-$(document).ready(function() {
-  $("a[target=_parent]").attr('target','_blank')
-});
-
 // show-hide button 
 
-$("#hide").click(function(){
-  $("p").hide();
-});
+// $("#hide").click(function(){
+//   $("p").hide();
+// });
 
-$("#show").click(function(){
-  $("p").show();
-});
+// $("#show").click(function(){
+//   $("p").show();
+// });

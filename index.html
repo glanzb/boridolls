@@ -50,7 +50,7 @@
           <li><a href="#bio">Bio</a></li>
           <li><a href="#art">Art</a></li>
           <li><a href="#custom">Custom orders</a></li>
-          <li><a href="#elist">Etsy shop</a></li>
+          <li><a href="#shop">Etsy shop</a></li>
           <li><a href="#doit">Do-it-yourself</a></li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -61,13 +61,6 @@
   <div class="container" id="car">
        <!-- Carousel main-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <!-- <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol> -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img src="./img/car/art2.jpg" alt="Artwork and biography">
@@ -129,11 +122,14 @@
   <div class="container" id="bio">
     <div class="row">
       <div class="jumbotron">
-          <img src="./img/portrait5.jpg" class="img-responsive">
-          <h1>About me</h1>
-          
-          <p>I am a graphic designer form Hungary, living mostly in California. I have tried different crafts, but I was never so much in love with any art form as I am with felting now. I enjoy working with wool and I create each of my items with lots of love and care. </p>
-          <p>My creations are Waldorf inspired, but I am self taught and use wool and other inlayed materials in a unique way. I use colorful wool and mix them with natural found objects or recycled and vintage material.</p>
+          <div>
+            <img src="./img/portrait5.jpg" class="img-responsive">
+            <h1>About me</h1>
+            
+            <p>My name is Borbala Arvai,  a graphic designer from Hungary, living in Ojai, California. 
+            <p>I have tried different crafts, but I was never so much in love with any art form as I am with felting now. I enjoy working with wool and I create each of my items with lots of love and care.</p>
+            <p>My creations are Waldorf inspired, and I am self-taught craft doll maker, using wool and other inlayed materials in a unique way.</p>
+            </div>
       </div>
     </div>
   </div><!-- bio end -->
@@ -200,7 +196,7 @@
 </div>
 <!-- etsy -->
 
-<div class="container">
+<div class="container" id="shop">
     <div class="row jumbotron">
     <h1>Etsy shop</h1>
     <div id="elist">
@@ -244,21 +240,14 @@
     <div class="row">
       <div class="jumbotron">
         <h1>Do it yourself - available classes</h1>
+        <p>Workshops</p>
           <div class="row rollover-blocks">
-            <div class="col-xs-6 highlight">
-              <h4>Workshops</h4>
-              <img src="./img/class2.jpg" alt="" class="img-responsive">
+            <div class="col-xs-12 highlight">
+              
+              <img src="./img/doit.jpg" alt="Workshops" class="img-responsive">
               <div class="roll-up">
-                <p>Join us for some felting fun! Subscribe to my mailing list or follow BoriDolls on facebook for dates.</p>
-                <a href="#" class="read-more">Facebook</a> 
-              </div>
-            </div>
-            <div class="col-xs-6 highlight">
-              <h4>Buy wool</h4>
-              <img src="./img/wool-flickr.jpg" alt="" class="img-responsive">
-              <div class="roll-up">
-                <p>Buy wool, do-it-yourself kits coming soon</p>
-                <a href="#shop">Etsy shop</a>
+                <p>Join us for some felting fun! Subscribe to my mailing list or follow BoriDolls on Facebook for dates.</p>
+                <a href="https://www.facebook.com/boridolls" target="_blank" class="read-more">Facebook</a> 
               </div>
             </div>
           </div>
@@ -267,34 +256,9 @@
   </div>
   <!-- doit end -->
 
- <div class="container" id="other">
-    <div class="row">
-      <div class="jumbotron">
-        <div class="row">
-              <div class="col-xs-4">
-              <p>contact info</p>
-              
-              </div>
-              <div class="col-xs-4">
-              <p>press</p>
-              
-              </div>
-              <div class="col-xs-4">
-              <p>my links</p>
-              facebook
-              shop
-              blog
-              
-            </div>
-      </div>
-    </div>
-  </div>  
-
-
-
-<!-- <p>If you click on the "Hide" button, I will disappear.</p>
-<button id="hide">Hide</button>
-<button id="show">Show</button> -->
+    <!-- <p>If you click on the "Hide" button, I will disappear.</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button> -->
   
   <!-- fixed footer -->
 
@@ -308,7 +272,7 @@
           <button type="button" class="btn btn-default"><a href="https://www.facebook.com/boridolls" target="_blank">Facebook page</a></button>
         </div>
         <div class="btn-group" role="group">
-         <button type="button"class="btn btn-default"><a href="https://www.etsy.com/shop/boridolls" target="_blank"> <span class="jv-etsy"></span>BoriDolls on Etsy</a></button>
+         <button type="button"class="btn btn-default"><a href="https://www.etsy.com/shop/boridolls" target="_blank"> BoriDolls on Etsy</a></button>
         </div>
       </div> 
     </nav>
@@ -319,15 +283,14 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <!-- <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> -->
-        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
         </div>
-        <div class="modal-body">
+          <div class="modal-body">
          
-          <!-- wufoo -->
-          <iframe height="800" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://boridolls.wufoo.com/embed/z7cn3zk18h0vg2/"><a href="https://boridolls.wufoo.com/forms/z7cn3zk18h0vg2/">Fill out my Wufoo form!</a></iframe><div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;"><span class="notranslate">There are tons of <a href="http://www.wufoo.com/features/">Wufoo features</a> to help make your forms awesome.</span></div>
-          <!-- wofoo end -->
-        </div>
+            <!-- wufoo -->
+            <iframe height="650" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://boridolls.wufoo.com/embed/z7cn3zk18h0vg2/"><a href="https://boridolls.wufoo.com/forms/z7cn3zk18h0vg2/">Fill out my Wufoo form!</a></iframe><div id="wuf-adv" style="font-family:'Oxygen', sans-serif;font-size: small;color:#a7a7a7;text-align:center;display:block;"><span class="notranslate">There are tons of <a href="http://www.wufoo.com/features/">Wufoo features</a> to help make your forms awesome.</span></div>
+            <!-- wofoo end -->
+          </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>

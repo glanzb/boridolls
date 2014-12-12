@@ -26,6 +26,7 @@ border-radius: 0;
 .jumbotron p {
 	font-size: 1.1em;
 	text-align: justify;
+	padding: 15px;
 }
 
 h1, .jumbotron h1 {
@@ -73,14 +74,6 @@ li {
 	background-size: contain;
 	background-color: #fff;
 }
-
-/*#shop {
-	background: url('../img/gaias.jpg') ;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-    background-position: center center;
-    background-size: contain;
-}*/
 
 #doit, #custom {
 	background: url('../img/bg1-s.jpg') ;
@@ -133,15 +126,15 @@ li {
 
 /* bio block */
 #bio img {
-	max-width: 40%;
+	max-width: 36%;
 	border-radius: 50%;
 	shape-outside: circle();
 	margin: 5px;
 	float: right;
 	vertical-align: middle;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgba(255,228,181,0.1)), color-stop(0.67, rgba(205,133,63,0.3)));
-	background-image: -moz-linear-gradient(center bottom, rgba(255,228,181,0.1) 33%, rgba(205,133,63,0.3) 67% ); 
-	padding: 20px;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgba(255,228,181,0.1)), color-stop(0.67, rgba(211, 195, 160, 0.3)));
+	background-image: -moz-linear-gradient(center bottom, rgba(255,228,181,0.1) 33%, rgba(211, 195, 160, 0.3) 67% );
+	padding: 15px;
 
 	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
@@ -203,7 +196,7 @@ outline: 0;
     margin-bottom:18px;
 }
 
-ul li img {
+#elist img, ul li img {
     cursor: pointer;
     padding: .975em; /* 3/4 of 1.3 */
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgba(255,228,181,0.1)), color-stop(0.67, rgba(211, 195, 160, 0.3)));
@@ -258,7 +251,6 @@ ul li img:hover {
 .rollover-blocks .roll-up {
   position: absolute;
   bottom: -50%;
-  color: white;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -268,14 +260,16 @@ ul li img:hover {
 .rollover-blocks .roll-up p, .rollover-blocks .roll-up a {
   display: block;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.3);
+  background-color: rgba(243, 243, 243, .5);
   font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
 }
 .rollover-blocks .roll-up a {
   margin: 0;
   padding-top: 0;
   padding-bottom: 10px;
-  color: white;
+
+
 }
 .rollover-blocks > div {
   overflow: hidden;
@@ -293,9 +287,10 @@ ul li img:hover {
   width: 100px;
   height: 100px;
   text-align: center;
+  font-weight: 700;
   padding-top: 40px;
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
+  background-color: rgba(243, 243, 243, .5);
+  /*color: white;*/
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -334,6 +329,7 @@ ul li img:hover {
 	text-overflow: ellipsis;
   	white-space: nowrap;
   	overflow: hidden;
+  	max-width: 200px;
 }
 
 blockquote{
@@ -371,11 +367,8 @@ blockquote::before{
   top: -10px;
 }
 
-
+/*
 @media screen and (min-width: 768px){
-/*.jumbotron {
-	padding: 0;
-}*/
 #bio img {
 	max-width: 25%;
 	}
@@ -395,7 +388,7 @@ blockquote::before{
 #bio img {
 	max-width: 35%;
 	}
-}
+}*/
 /*
 @media screen and (max-width: 768px) {
 	.rollover-blocks > div {
