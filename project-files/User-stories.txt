@@ -1,0 +1,27 @@
+User stories
+ 
+The Artist
+ 
+As an artist, I want to introduce my work to the public, showing them that it is not exclusively for sales purposes, but there is a “real” person behind them. In order to get more attention to my work, my website should not be an e-commerce website, but more like a gallery of my artwork and a short biography.
+ 
+My work is exhibited in local galleries, in order to keep in touch with my previous costumers and anyone who is interested, i want to build a mailing list to be able to send updates of exhibition dates and new work in galleries or sold on Etsy.com.
+ 
+As an artist who makes a majority of her income by selling handmade dolls on Etsy.com, I want my custumers to be able to access the shop and the individual items from my website.
+ 
+Since I make dolls for custom orders too, I want my future customers see the options, get ideas and make it possible for them to easily reach me, send messages and place orders.
+ 
+The user
+ 
+As a user I want a fast, informative, easy to use website, that is accessible on both desktop and smartphones. I want to be able to scroll through the page fast to get the basic idea of what I’m looking at and what it has to offer.
+ 
+I saw a flyer or Facebook ad and I want to know more about the artist. not sure if I want to buy anything, I might not even know that they are for sale, but the dolls look cute.
+ 
+I open the page and find out that that the dolls are not imported, mass produced World Market-like items, but handmade by one person.
+ 
+I want to be able to scroll through pictures of her work, see a gallery of images. When I click on a thumbnail, I want to see the same image larger, have navigation to see the other pictures without having to open them one by one, or close the window with one click to get back to the thumbnails.
+ 
+I scroll down to read more about the artist. If i missed it on the top of the page, I get reminded that I can order the dolls online.
+ 
+I read on and get to the store section. It would be nice if I could search by categories or keywords, but browsing through thumbnails is fun too, if I can click on the item and get to the official Etsy website without having to search for the exact item again. On closing the Etsy shop window the Boridolls website should still be open.
+ 
+I didn’t find exactly what I wanted, but I have an idea based on the gallery of some custom orders, so I want to get in touch with the artist. In order to describe what I want, I want to be able to either send an email or fill out a form to contact her.
