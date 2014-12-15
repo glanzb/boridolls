@@ -7,7 +7,7 @@ $.ajax({
         console.log(data,'success');
         for(x in data.results){
             $('#elist')
-                .append('<div class="col-md-3 col-sm-4 col-xs-6"> <a href="'+data.results[x].url+'" target="_blank"><img class="img-responsive" src="' +data.results[x].Images[0].url_170x135+'">'+data.results[x].title+'</a></div>')
+                .append('<div class="col-sm-4 col-xs-6"> <a href="'+data.results[x].url+'" target="_blank"><img class="img-responsive" src="' +data.results[x].Images[0].url_170x135+'">'+data.results[x].title+'</a></div>')
         }
     },
     error: function(data){
