@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>BoriDolls.com style guide</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="./css/bori.css" rel="stylesheet">
+    <script src="./js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        .frame {   
+            width: 60%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .guide-title {
+            border-bottom: 2px solid #E8E8E8;
+            font-size: 1.5em;
+            margin: 10px 0 10px -30px;
+            padding-bottom: 10px;
+        }
+        .colors tr td {
+            width: 150px;
+            height: 150px;
+            padding: 5px;
+            border: 5px solid white;
+        }
+    </style>
+  </head>
+<body>
+<div class="frame">
+  <div class="navbar">
+    <a class="navbar-brand" style="color:#000; font-size:2em;margin-left:-50px">Style guide for BoriDolls <span>creations</span></a>
+  </div>
+
+  <div class="guide-title">Typography</div>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h4>Heading 4</h4>
+    <p>Paragrah text</p>
+    <li id="art"> <p>Image gallery title</p></li>
+    <div class="jumbotron"><p>Jumbotron paragraph</p></div><br>
+    <blockquote>Blockquotes</blockquote>
+
+  <div class="guide-title">Colors</div>
+  <div class="colors">
+    <table>
+      <tr style="color: white;">
+        <td style="background: #382F29;">text color: #382F29</td>
+        <td style="background: #c76c0c;">a, quoute: #c76c0c;</td>
+        <td style="background: #AE5E0A;">a:hover: #AE5E0A;</td>
+      </tr>
+      <tr>
+        <td style="background: rgba(211, 195, 160, 0.3);">body background: rgba(211, 195, 160, 0.3)</td>
+        <td style="background: rgba(211, 195, 160, 0.3);">img shadow: rgba(211, 195, 160, 0.3)</td>
+        <td style="background: url(./img/bg1-s.jpg);">background image</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="guide-title">Navigation (fixed top and bottom nav)</div>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">BoriDolls <span>creations</span></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#"><class data-toggle="modal" data-target="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Nav 1</a></li>
+        <li><a href="#">Nav 2</a></li>
+        <li><a href="#">Nav3</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </nav>
+
+  <footer class="footer" id="foot-nav">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <div class="btn-group" role="group">
+          <button type="button"class="btn btn-default"><a href="#">Foot nav 1</a></button>
+        </div>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-default"><a href="#">Foot nav 2</a></button>
+        </div>
+        <div class="btn-group" role="group">
+         <button type="button"class="btn btn-default"><a href="#">Foot nav 3</a></button>
+        </div>
+      </div> 
+    </nav>
+  </footer>
+
+  <div class="guide-title">Carousel</div>
+
+  <div class="carousel">
+    <div class="item active">
+      <img src="./img/car/art2.jpg" alt="Artwork and biography" class="img-responsive">
+        <div class="container">
+          <a href="#bio">
+            <div class="carousel-caption">
+              <h1>Carousel title and link</h1>
+            </div>
+          </a>
+        </div>
+    </div>
+  </div>
+
+  <div class="guide-title">Image gallery</div>
+
+  <div id="art">
+    <div class="row">
+      <ul class="row jumbotron">
+        <li class="col-lg-3 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/art/she.jpg"> <p>She transformer (2010)</p></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="guide-title">Etsy listings</div>
+
+  <div id="elist">
+    <div class="col-md-3 col-sm-4 col-xs-6"> 
+      <a href="https://www.etsy.com/listing/171192099/needle-felted-animal-barn-owl-needle?utm_source=boridolls&amp;utm_medium=api&amp;utm_campaign=api" target="_blank"><img class="img-responsive" src="https://img0.etsystatic.com/019/1/5723525/il_170x135.533448836_4ugv.jpg">Needle Felted Animal, Barn Owl, Needle Felted Owl, small bird, Waldorf toy, miniatures, Original design by Borbala Arvai, made to order</a>
+    </div>
+  </div>
+  <br clear="all">
+
+  <div class="guide-title">General offerbox (jumbotron) with background image</div>
+
+  <div id="custom">
+    <div class="jumbotron">
+      <h1>Title<span class="hidden-xs"> (long text partly hidden on mobile)</span></h1>
+      <p>Lead with <a href="#">link </a></p>
+      <div class="row">
+        <div class="col-xs-4">
+          <img src="./img/custom/biker.jpg" class="img-responsive">
+        </div>
+        <div class="col-xs-4">
+          <img src="./img/custom/wizardboy.jpg" class="img-responsive">
+        </div>
+        <div class="col-xs-4">
+          <img src="./img/custom/robot.jpg" class="img-responsive"> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
