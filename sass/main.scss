@@ -1,193 +1,220 @@
+@mixin sans {
+  font-family:'Oxygen', sans-serif;
+}
+@mixin hand {
+  font-family: 'Lovers Quarrel', cursive;
+}
+@mixin car-shadow {
+  text-shadow: 1px 2px 1px rgba(0,0,0,1);
+}
+@mixin title-shadow {
+  text-shadow: 1px 2px 1px rgba(0,0,0,.3);
+}
+@mixin text-bg {
+  background-color: rgba(243, 243, 243, .5);
+}
+@mixin img-bg {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgba(255,228,181,0.1)), color-stop(0.67, rgba(211, 195, 160, 0.3)));
+  background-image: -moz-linear-gradient(center bottom, rgba(255,228,181,0.1) 33%, rgba(211, 195, 160, 0.3) 67% );
+}
+
+
+
+
+$brown: #382F29;
+$orange: #c76c0c;
+$dorange: #AE5E0A;
+
+
 /* =================
-		General 
+    General 
  ================== */
 
  body {
   padding-top: 50px;
   margin-bottom: 60px;
-  font-family:'Oxygen', sans-serif;
+  @include sans;
   font-size: 1.25em;
   color: #382F29;
  }
  a {
- 	color: #c76c0c
+  color: $orange;
  }
- a:hover, a:visited, a:focus {
- 	color: #AE5E0A;
- 	text-decoration: none;
+ a:hover, a:visited {
+  color: $dorange;
+  text-decoration: none;
  }
 .container {
-	 max-width: 1024px;
+   max-width: 1024px;
 }
 .container .jumbotron, .container-fluid .jumbotron {
-	border-radius: 0;
+  border-radius: 0;
 }
 .jumbotron p {
-	font-size: 1.25em;
-	text-align: justify;
-	padding: 15px;
+  font-size: 1.25em;
+  text-align: justify;
+  padding: 15px;
 }
 h1, .jumbotron h1 {
-	font-family: 'Lovers Quarrel', cursive;
-	font-size: 4.5rem;
-	text-shadow: 1px 2px 1px rgba(0,0,0,.3);
-	margin-top: 0;
+  @include hand;
+  font-size: 4rem;
+  @include title-shadow;
+  margin-top: 0;
 }
 h2 {
-	font-size: 2.5em;
-	font-family: 'Lovers Quarrel', cursive;
+  font-size: 2.5em;
+  @include hand;
 }
 li {
-	list-style: none;
+  list-style: none;
 }
 
 /* =================
-		Backgrounds 
+    Backgrounds 
  ================== */
 
 .jumbotron {
-	background-color: rgba(211, 195, 160, 0.3);
-	margin-bottom: 0;
+  background-color: rgba(211, 195, 160, 0.3);
+  margin-bottom: 0;
 }
 .jumbotron h1, h4, p {
-	background-color: rgba(243, 243, 243, .5);
-	padding: 10px;
-	margin-top: 0px;
+  @include text-bg;
+  padding: 10px;
+  margin-top: 0px;
 }
 #bio, #doit, #custom {
-	background: url('../img/bg1-s.jpg') ;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+  background: url('../img/bg1-s.jpg') ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center center;
   background-size: cover;
 }
 #art {
-	background-size: contain;
-	background-color: #fff;
+  background-size: contain;
+  background-color: #fff;
 }
 
 /* =================
-		Navbar 
+    Navbar 
  ================== */
 
 .navbar-brand span {
-	font-family: 'Lovers Quarrel', cursive;
-	font-size: 1.5em;
+  @include hand;
+  font-size: 1.5em;
 }
 .navbar {
-	min-height: 20px;
+  min-height: 20px;
 }
 
 /* =================
- 		Foot nav 
+    Foot nav 
  ================== */
 
 .btn-default {
-	color: #333;
-	background-color: #fff;
-	border: 0;
-	margin-bottom: 0;
+  color: #333;
+  background-color: #fff;
+  border: 0;
+  margin-bottom: 0;
 }
 
 /* =================
-		Carousel 
+    Carousel 
  ================== */
 
 #car.container {
-	padding: 0 0;
+  padding: 0 0;
 }
 .carousel-caption {
-	padding: .5em;
-	padding-bottom: 0;
-	margin-bottom: 0;
-	padding-top: 10px;
-	right: 0;
-	left: 0;
-	background-color: rgba(243, 243, 243, .5);
-	text-shadow: 1px 2px 1px rgba(0,0,0,1);
-	color: #fff;
+  padding: .5em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  right: 0;
+  left: 0;
+  @include text-bg;
+  @include car-shadow;
+  color: #fff;
 }
-.carousel-caption h1 {
-	text-shadow: 1px 2px 1px rgba(0,0,0,1);
-}
-.carousel-caption p {
-	font-size: 1.25em;
-}
-.carousel-caption:hover{
-	background-color: rgba(243, 243, 243, .7);
+.carousel-caption {
+  h1 {
+  @include car-shadow;
+  }
+  p {
+  font-size: 1.25em;
+  }
 }
 .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
-	top: 39%;
+  top: 39%;
 }
 .glyphicon-chevron-right:before, .glyphicon-chevron-left:before  {
-	text-shadow: 1px 2px 1px rgba(0,0,0,1);
-	color: #fff;
-	font-family: 'Lovers Quarrel', cursive;
-	font-size: 4em;
-	content: "›"
+  @include car-shadow;
+  color: #fff;
+  @include hand;
+  font-size: 4em;
+  content: "›"
 }
 .glyphicon-chevron-left:before {
-	content: "‹"
+  content: "‹"
 }
 
 /* =================
-		Bio block 
+    Bio block 
  ================== */
 
 #bio img {
-	max-width: 36%;
-	border-radius: 50%;
-	shape-outside: circle();
-	margin: 5px;
-	float: right;
-	vertical-align: middle;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgba(255,228,181,0.1)), color-stop(0.67, rgba(211, 195, 160, 0.3)));
-	background-image: -moz-linear-gradient(center bottom, rgba(255,228,181,0.1) 33%, rgba(211, 195, 160, 0.3) 67% );
-	padding: 15px;
-	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+  max-width: 36%;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 5px;
+  float: right;
+  vertical-align: middle;
+  @include img-bg;
+  padding: 15px;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
 
 /* =================
- 		Art gallery 
+    Art gallery 
  ================== */
 
-#art ul li {     
-  list-style:none;
-  margin-bottom:10px;
-}
-#art ul li p {     
-  padding-top: 3px;
-  text-align: center;
-  background: transparent;
-}
-#art p {
-	text-align: center;
-	font-size: .9em;
+#art {
+  ul li {     
+    list-style:none;
+    margin-bottom:10px;
+  }
+  ul li p {     
+    padding-top: 3px;
+    text-align: center;
+    background: transparent;
+  }
+  p {
+    text-align: center;
+    font-size: .9em;
+  }
 }
 #elist a img, ul li img {
   cursor: pointer;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgba(255,228,181,0.1)), color-stop(0.67, rgba(211, 195, 160, 0.3)));
-	background-image: -moz-linear-gradient(center bottom, rgba(255,228,181,0.1) 33%, rgba(211, 195, 160, 0.3) 67% ); 
-	padding: 20px;
+ @include img-bg; 
+  padding: 20px;
 }
 ul li img:hover {
-	-moz-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
-	-webkit-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
-	box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
-	bottom: .26em;
-	}
+  -moz-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+  -webkit-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+  box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+  bottom: .26em;
+  }
 .modal-body {
-	padding: 5px;
+  padding: 5px;
 }
 .modal-content {
-	border-radius: 2px;
+  border-radius: 2px;
 }
 .modal-dialog {
-	 vertical-align: middle;
+   vertical-align: middle;
 }
 .modal-dialog img {
-	text-align: center;
-	margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 .controls {          
   width: 50px;
@@ -202,29 +229,29 @@ ul li img:hover {
 }
 
 /* =================
- 		Rollover 
+    Rollover 
  ================== */
 
 .read-more:after {
-  	content: " >>";
+    content: " >>";
 }
 .rollover-blocks {
- 	margin-top: 20px;
+  margin-top: 20px;
 }
 .rollover-blocks .roll-up {
-	position: absolute;
-	bottom: -30%;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+  position: absolute;
+  bottom: -30%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .rollover-blocks .roll-up p, .rollover-blocks .roll-up a {
-	display: block;
-	padding: 10px;
-	background-color: rgba(243, 243, 243, .5);
-	font-family: 'Oxygen', sans-serif;
-	font-weight: 700;
+  display: block;
+  padding: 10px;
+  @include text-bg;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
 }
 .rollover-blocks .roll-up a {
   margin: 0;
@@ -236,7 +263,7 @@ ul li img:hover {
   position: relative;
 }
 .highlight {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 .rollover-blocks > div.highlight:before {
   position: absolute;
@@ -248,7 +275,7 @@ ul li img:hover {
   text-align: center;
   font-weight: 700;
   padding-top: 40px;
-  background-color: rgba(243, 243, 243, .5);
+  @include text-bg;
   /*color: white;*/
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -282,12 +309,12 @@ ul li img:hover {
 }
 
 /* =================
- 		Etsy
+    Etsy
  ================== */
 
 #elist a {
-	display: block;
-	text-overflow: ellipsis;
+  display: block;
+  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   max-width: 180px;
@@ -301,7 +328,7 @@ ul li img:hover {
 }
 
 /* =================
- 		Quotes 
+    Quotes 
  ================== */
 
 blockquote {
@@ -310,13 +337,13 @@ blockquote {
   margin: 0 0 20px;
   position: relative;
   /*Font*/
-  font-family: 'Lovers Quarrel', cursive;
+  @include hand;
   font-size: 2.25em;
   line-height: 1.2;
   text-align: justify;
   /*Borders */
-  border-left: 15px solid #c76c0c;
-  border-right: 2px solid #c76c0c;
+  border-left: 15px solid $orange;
+  border-right: 2px solid $orange;
   /*Box Shadow*/
   -moz-box-shadow: 2px 2px 15px #ccc;
   -webkit-box-shadow: 2px 2px 15px #ccc;
@@ -325,7 +352,7 @@ blockquote {
 blockquote::before {
   content: "“";
   font-size: 4em;
-  color: #c76c0c;
+  color: $orange;
   /*Positioning*/
   position: absolute;
   left: 10px;
@@ -333,10 +360,11 @@ blockquote::before {
 }
 
 /* =================
-		Media queries
+    Media queries
 ================== */
 @media screen and (max-width: 700px) {
-	.rollover-blocks .roll-up {
-	max-width: 30em;
-	}
+
+.rollover-blocks .roll-up {
+  max-width: 30em;
+}
 }
